@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
 
+const fallbackImage =
+  "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80";
+
 const images = [
   "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600",
   "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600",
   "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600",
   "https://images.unsplash.com/photo-1502716119720-b23a93e5fe1b?w=600",
-  "https://images.unsplash.com/photo-1496217590455-aa63a8550c23?w=600",
+  "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=80",
   "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600",
   "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600",
   "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600",
@@ -44,6 +47,16 @@ export const Lookbook = () => {
                 src={src}
                 alt={`Lookbook ${i + 1}`}
                 loading="lazy"
+                onError={(event) => {
+                  const image = event.currentTarget;
+
+                  if (image.dataset.fallbackApplied === "true") {
+                    return;
+                  }
+
+                  image.dataset.fallbackApplied = "true";
+                  image.src = fallbackImage;
+                }}
                 className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-vela-charcoal/0 transition-colors duration-500 group-hover:bg-vela-charcoal/40">
