@@ -1,12 +1,12 @@
 # Vela Wearable Art
 
-This is a demo website built by me as part of my portfolio. It showcases a modern wearable art landing page experience with smooth interactions, responsive product layouts, and a polished UI.
+This is a demo website built by me as part of my portfolio. It showcases a modern wearable art landing page experience with smooth interactions, responsive product layouts and a polished UI.
 
 ## Overview
 
 - Built by: Me
 - Purpose: Portfolio demo website
-- Role: Designer, developer, and creator of the full frontend experience
+- Role: Designer, developer and creator of the full frontend experience
 - Status: Demo / prototype site for presentation and portfolio use only
 
 ## What I created
@@ -32,18 +32,7 @@ This is a demo website built by me as part of my portfolio. It showcases a moder
 - Framer Motion
 - Radix UI components
 
-## Running locally
-
-1. Install dependencies
-
-   `npm install`
-
-2. Start the development server
-
-   `npm run dev`
-
-3. Open the site in your browser at `http://localhost:8080`
 
 ## Notes
 
-This project is intended as a portfolio demo. It is not a production storefront and is built to demonstrate frontend development capabilities, design polish, and interactive UI composition.
+This project is intended as a portfolio demo. It is not a production storefront and is built to demonstrate frontend development capabilities, design polish and interactive UI composition.
