@@ -1,38 +1,57 @@
 # Vela Wearable Art
 
-This is a demo website built by me as part of my portfolio. It showcases a modern wearable art landing page experience with smooth interactions, responsive product layouts and a polished UI.
-
 ## Overview
 
-- Built by: Me
-- Purpose: Portfolio demo website
-- Role: Designer, developer and creator of the full frontend experience
-- Status: Demo / prototype site for presentation and portfolio use only
+This repository contains the source code for the demo portfolio website of Vela Wearable Art, a modern web application showcasing contemporary design and functionality.
 
-## What I created
+## Description
 
-- Custom landing page with hero, product gallery, and featured collections
-- Responsive navigation and product drawer experience
-- Brand-focused UI components for a polished wearable lifestyle website
-- Portfolio-ready demo that highlights frontend skills and interaction design
+This is a demo portfolio website built to demonstrate best practices in web development, featuring responsive design, interactive elements, and optimized performance.
 
-## What I added
+## Technologies Used
 
-- Modern React + Vite app structure
-- Tailwind CSS for styling and responsive design
-- Reusable UI components and layout patterns
-- Smooth animations and user-friendly interactions
-
-## Tech stack
-
-- React
 - Vite
 - TypeScript
+- React
 - Tailwind CSS
-- Framer Motion
-- Radix UI components
+- PostCSS
+- Other modern web technologies
 
+## Getting Started
 
-## Notes
+### Prerequisites
 
-This project is intended as a portfolio demo. It is not a production storefront and is built to demonstrate frontend development capabilities, design polish and interactive UI composition.
+- Node.js (version 18 or higher)
+- Bun package manager
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd Vela_Wearable_Art
+   ```
+
+2. Install dependencies:
+   ```bash
+   bun install
+   ```
+
+3. Start the development server:
+   ```bash
+   bun run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173` (or the port specified by Vite).
+
+## Build
+
+To build the project for production:
+
+```bash
+bun run build
+```
+
+## License
+
+This project is for demonstration purposes only and is not licensed for commercial use.

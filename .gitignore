@@ -1,4 +1,6 @@
+# =========================
 # Logs
+# =========================
 logs
 *.log
 npm-debug.log*
@@ -7,18 +9,95 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# =========================
+# Dependencies
+# =========================
+node_modules/
+bower_components/
+
+# =========================
+# Build / Output
+# =========================
+dist/
+dist-ssr/
+build/
+out/
+.output/
+.next/
+.nuxt/
+.svelte-kit/
+coverage/
+storybook-static/
+
+# =========================
+# Framework / Tooling
+# =========================
+.vinxi/
+.tanstack/
+.nitro/
+.turbo/
+.cache/
+.parcel-cache/
+.eslintcache
+
+# =========================
+# Cloudflare / Wrangler
+# =========================
+.wrangler/
+.dev.vars
+
+# =========================
+# Vercel / Netlify
+# =========================
+.vercel/
+.netlify/
+
+# =========================
+# Environment Files
+# =========================
+.env
+.env.*
 *.local
 
-# Editor directories and files
+# =========================
+# Python
+# =========================
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE / Editors
+# =========================
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Misc
+# =========================
+*.pid
+*.seed
+*.pid.lock
